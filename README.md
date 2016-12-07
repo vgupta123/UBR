@@ -6,6 +6,7 @@
 * Major problem in current sentiment classification models is noise due to presence of user biases in reviews rating.
 * We worked on two simple statistical methods to remove user bias noise to improve fine grained sentimental classification.
 * We applied our methods on SNAP published Amazon Fine Food Reviews data-set and two major categories Electronics and Movies & TV of e-Commerce Reviews data-set. Correspondingly, there are 3 folders, food, electronics and movies.
+
 ### Setup
 
 Run "setup.sh" for setting up.
