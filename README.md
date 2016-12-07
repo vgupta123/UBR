@@ -35,3 +35,11 @@ python tfidf.py 1
 
 ####For testing UBR-2 with tf-idf faetures
 python tfidf.py 2
+
+### Authors
+
+- Rahul Kumar Wadbude (IIT Kanpur)(warahul@iitk.ac.in)
+- Vivek Gupta (Microsoft Research)(t-vigu@microsoft.com)
+- Dheeraj Mekala (IIT Kanpur)(dheerajm@iitk.ac.in)
+- Janish Jindal (IIT Kanpur)(janish@iitk.ac.in)
+- Harish Karnick (IIT Kanpur)(hk@iitk.ac.in)
