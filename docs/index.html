@@ -54,7 +54,7 @@
 <li>We report results on three datasets: Amazon food reviews, Amazon electronics reviews and Amazon movies & TV reviews</li>
 <li>The review text was processed through different feature formation techniques and in below tables, we show the performance of different classification methods with different features</li>
 </ul>
-
+<h3>FOOD RVIEWS</h3>
 <table>
 <thead>
 <tr>
@@ -134,6 +134,8 @@
 </tbody>
 </table>
 
+
+<h3>ELECTRONICS RVIEWS</h3>
 <table>
 <thead>
 <tr>
@@ -213,6 +215,8 @@
 </tbody>
 </table>
 
+
+<h3>MOVIES & TV</h3>
 <table>
 <thead>
 <tr>
@@ -293,41 +297,11 @@
 </table>
 
 <ul>
-<li><p>As shown in the Table all of the models’ discriminator representation improved the results over the discriminator representation of DCGAN Radford et al. (2015) thus showing that the proposed models provide regularization to the training procedure of the discriminator. </p></li>
-<li><p>The non-trivial accuracy obtained by the message representation which never got to see the real images is an interesting phenomena while the improvement of the accuracy with the represenation consisting of Message along-side the Discriminator features shows that the Message representation learns some complementary features which helps in the overall classification task.</p></li>
+<li><p>As shown in the above tables,We experimented using 3 datasets and 3 feature formation techniques and showed improvement compared to direct classification and other trivial baselines approaches </p></li>
+<li><p>Our experiments show that user-bias removal is a legitimate problem and need to be handled in fine grained review Analysis.</p></li>
+<li><p>Our proposed methods work well for all commonly used feature representation techniques.</p></li>
 </ul>
 
-<h2>
-<a id="message-clustering" class="anchor" href="#message-clustering" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Message Clustering</h2>
-
-<p style="text-align:center;"><img src="https://raw.githubusercontent.com/arnabgho/MPM-GAN/master/images/Cluster_Analysis.png" width="540px" height="450px"></p>
-
-<ul>
-<li><p>The celebrity dataset Liu et al. (2015) was used to partition the faces based on the type of hair into five categories: bald, black, brown, blond and gray.</p></li>
-<li><p>The images belonging to these partitions were passed through the Message Generator to get the representations of each of the images from the Message Generator.</p></li>
-<li><p>The representations are then reduced to 2 dimensions using T-SNE and then they are represented using the different colors.</p></li>
-<li><p>The messages for the bald hair style totally separates from the rest while black and brown being a bit subjective are similar in the message space but some clusters for black hair emerge which are totally pure.</p></li>
-<li><p>Gray hair also separates quite clearly from the rest.</p></li>
-</ul>
-
-<h2>
-<a id="some-interesting-interpolation-results" class="anchor" href="#some-interesting-interpolation-results" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Some Interesting Interpolation Results</h2>
-
-<p style="text-align:center;"><img src="https://raw.githubusercontent.com/arnabgho/MPM-GAN/master/images/conceding_message_conditioned_msgimages_G1_.png" width="450px" height="300px"></p>
-
-<p>This is a perfect rendering of the creation that an artist takes in order to create a masterpiece applying changes one layer at a time</p>
-
-<p style="text-align:center;"><img src="https://raw.githubusercontent.com/arnabgho/MPM-GAN/master/images/competingimages_G2_.png" width="450px" height="450px"></p>
-
-<p>The generations move from a cartoon-like representation of the woman to the actual face of the woman.</p>
-
-<p style="text-align:center;"><img src="https://raw.githubusercontent.com/arnabgho/MPM-GAN/master/images/competing_message_conditionedimages_G1_1_.png" width="450px" height="450px"></p>
-
-<p>The generations move from a human to angel/spirit like representation</p>
-
-<p style="text-align:center;"><img src="https://raw.githubusercontent.com/arnabgho/MPM-GAN/master/images/conceding_message_conditioned_msgimages_G2_.png" width="450px" height="450px"></p>
-
-<p>The classic example of depiction of ageing process. It depicts the various stages of aging of a person.</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/arnabgho/MPM-GAN"  target="_blank">Message Passing Multi-Agent Generative Adversarial Networks</a> is maintained by <a href="https://github.com/arnabgho"  target="_blank">arnabgho</a>.</span>
