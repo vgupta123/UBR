@@ -12,12 +12,19 @@ Run "setup.sh" for setting up.
 ### Testing
 
 Scripts for testing is in three folders.
+
 *electronics
+
 *food
+
 *movies
+
 cd to appropriate folder and then:
+
 ####For testing various baselines
+
 python baseline.py #User mean,mode etc.
+
 python predict5.py #Always predict 5
 
 ####For testing UBR-1 and UBR-2 with LDA faetures
