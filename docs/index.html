@@ -42,7 +42,7 @@
 <li><p>Major problem in current sentiment classification models is noise due to presence of user biases in reviews rating.</p></li>
 <li><p>We worked on two simple statistical methods to remove user bias noise to improve fine grained sentimental classification.</p></li>
 <li><p>We applied our methods on SNAP published Amazon Fine Food Reviews data-set and  two major categories Electronics and Movies & TV of e-Commerce Reviews data-set.</p></li>
-<li><p>We gained improvement in fine grained sentiment classification on three commonly used feature representation after removing user bias compared to one without removing bias</p></li>
+<li><p>We gained improvement on standard evaluation metrics (rmse,mae) for  three commonly used feature representation after removing user bias compared to one without removing bias on task of fine grained sentiment analysis</p></li>
 </ul>
 
 <h2>
@@ -53,7 +53,7 @@
 
 <ul>
 <li>We report results on three datasets: Amazon food reviews, Amazon electronics reviews and Amazon movies & TV reviews</li>
-<li>The review text was processed through different feature formation techniques and in below tables, we show the performance of different classification methods with different features</li>
+<li>The review text was represented into three features representation (tf-idf,lda & doc2vec) and evaluated on standard metric like rmse/mae. Below tables, shows the performance of different classification methods with different features.</li>
 <li>Our methods are represented as UBR-I and UBR-II</li>
 </ul>
 <h3>FOOD RVIEWS</h3>
@@ -298,10 +298,13 @@
 </tbody>
 </table>
 
+<h2>
+<a id="conclusion" class="anchor" href="#conclusion" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Conclusion</h2>
+
 <ul>
-<li><p>As shown in the above tables, we experimented using 3 datasets and 3 feature formation techniques and showed improvement compared to direct classification and other trivial baselines approaches </p></li>
+<li><p>From above table user bias removal improved fine grained sentimental analysis </p></li>
 <li><p>Our experiments show that user-bias removal is a legitimate problem and need to be handled in fine grained review Analysis.</p></li>
-<li><p>Our proposed methods work well for all commonly used feature representation techniques.</p></li>
+<li><p>Proposed method work for standard feature representation techniques</p></li>
 </ul>
 
 
