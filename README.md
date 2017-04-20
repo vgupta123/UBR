@@ -23,6 +23,9 @@ Scripts for testing is in three folders.
 
 cd to appropriate folder and then:
 
+####For getting PV-DBoW features
+python doc2vec.py
+
 ####For testing various baselines
 
 python baseline.py #User mean,mode etc.
