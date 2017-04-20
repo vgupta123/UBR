@@ -21,7 +21,7 @@ from random import shuffle
 from scipy import io as sio
 import datetime
 
-from load_db_food import *
+from load_db_electronics import *
 SentimentDocument = namedtuple('SentimentDocument', 'words tags')
 alldocs=[]
 for name,entity in izip(['Summary_Text'],[Summary_Text]):
@@ -68,4 +68,4 @@ for epoch in range(passes):
     alpha -= alpha_delta
 
 for name, train_model in models_by_name.items():
-	sio.savemat('food_doc2vec.mat', {'food_doc2vec':train_model.docvecs.doctag_syn0})
+	sio.savemat('electronics_doc2vec.mat', {'electronics_doc2vec':train_model.docvecs.doctag_syn0})
