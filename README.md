@@ -1,4 +1,4 @@
-## UBR: User Bias Removal in Fine Grained Sentiment Analysis
+## [UBR: User Bias Removal in Fine Grained Sentiment Analysis] (https://dl.acm.org/doi/10.1145/3152494.3152520)
 
 
 ### Introduction
@@ -10,6 +10,10 @@
 ### Setup
 
 Run "setup.sh" for setting up.
+
+```
+bash setup.sh
+```
 
 ### Testing
 
@@ -23,29 +27,54 @@ Scripts for testing is in three folders.
 
 cd to appropriate folder and then:
 
-####For getting PV-DBoW features
+#### For getting PV-DBoW features
 
+```
 python doc2vec.py
+```
 
-####For testing various baselines
+#### For testing various baselines
 
+```
 python baseline.py #User mean,mode etc.
-
 python predict5.py #Always predict 5
+````
 
-####For testing UBR-1 and UBR-2 with LDA faetures
+#### For testing UBR-1 and UBR-2 with LDA features
+
+```
 python lda_implement.py
+```
 
-####For testing UBR-1 with tf-idf faetures
+#### For testing UBR-1 with tf-idf features
+```
 python tfidf.py 1
+```
 
-####For testing UBR-2 with tf-idf faetures
+### For testing UBR-2 with tf-idf faetures
+```
 python tfidf.py 2
+```
 
-### Authors
+### Citation
 
-- Rahul Kumar Wadbude (IIT Kanpur)(warahul@iitk.ac.in)
-- Vivek Gupta (Microsoft Research)(t-vigu@microsoft.com)
-- Dheeraj Mekala (IIT Kanpur)(dheerajm@iitk.ac.in)
-- Janish Jindal (IIT Kanpur)(janish@iitk.ac.in)
-- Harish Karnick (IIT Kanpur)(hk@iitk.ac.in)
+```
+@inproceedings{10.1145/3152494.3152520,
+author = {Wadbude, Rahul and Gupta, Vivek and Mekala, Dheeraj and Karnick, Harish},
+title = {User Bias Removal in Review Score Prediction},
+year = {2018},
+isbn = {9781450363419},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3152494.3152520},
+doi = {10.1145/3152494.3152520},
+booktitle = {Proceedings of the ACM India Joint International Conference on Data Science and Management of Data},
+pages = {175–179},
+numpages = {5},
+keywords = {bias removal, score prediction, user modeling},
+location = {Goa, India},
+series = {CoDS-COMAD ’18}
+}
+
+
+```
