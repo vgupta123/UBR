@@ -1,4 +1,4 @@
-## [UBR: User Bias Removal in Fine Grained Sentiment Analysis] (https://dl.acm.org/doi/10.1145/3152494.3152520)
+## [UBR: User Bias Removal in Fine Grained Sentiment Analysis](https://dl.acm.org/doi/10.1145/3152494.3152520)
 
 
 ### Introduction
